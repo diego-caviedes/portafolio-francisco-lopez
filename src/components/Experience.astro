@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "JUN 2024 - NOV 2024",
+    title: "Desarrollador de Software",
+    company: "Fisa:group",
+    description:
+      "Fui seleccionado como Talent Seed durante mis pasantías, donde trabajé en tesorería bancaria utilizando C#, Python, React y SQL Server. Mi función principal fue implementar sistemas para optimizar procesos y proponer soluciones innovadoras.",
+  },
+  {
+    date: "FEB 2024 - MAR 2024",
+    title: "Ayudante de catedra",
+    company: "Fenedif",
+    description:
+      "Impartí cursos de computación para personas con discapacidad, utilizando herramientas como Word, Excel y PowerPoint. También apoyé a mi tutor en tareas de enseñanza y asistencia a los estudiantes.",
+  },
+  {
+    date: "ENE 2021 - DIC 2021",
+    title: "Atención al cliente",
+    company: "Cabinas de Andinatel",
+    description:
+      "Encargado de gestionar las consultas y solicitudes de los clientes, siempre con un enfoque en la resolución rápida y eficaz.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
